@@ -1,0 +1,27 @@
+.container {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sticky {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    background: yellow;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1000; /* Ensures it stays above other content */
+    display: flex; /* To divide the top row into two sections */
+    justify-content: space-between; /* Space between the two sections */
+}
+
+.sticky .left,
+.sticky .right {
+    width: 48%; /* Adjust the width of each section as needed */
+}
+
+.content {
+    padding: 20px;
+    background: lightblue;
+    height: 1500px; /* Ensure enough content to scroll */
+}
